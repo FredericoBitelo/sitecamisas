@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <script src="script.js" defer> </script>
+    <title> Loja de Camisas </title>
+</head>
+<body>
+    <header> 
+        <div id="logodiv">
+            <img id="logo" src="icone.png" alt="Logo">
+        </div>  
+        <div>
+            <h3 id="nomeheader"> FREBE CAMISAS </h3>
+        </div>
+        <div>
+            <ul id="menu">
+                <li><a href="#section1"> Quem somos </a></li>
+                <li> <a href="#section2">Camisetas</a> </li> 
+            </ul>
+        </div>
+    </header>
+    <section>
+        <div class="carrosel">
+            <div class="slides">
+                <input class="desativar" type="radio" name="slide" id="slide1" checked="checked">
+                <input class="desativar" type="radio" name="slide" id="slide2">
+                <input class="desativar" type="radio" name="slide" id="slide3">
+                <input class="desativar" type="radio" name="slide" id="slide4">
+                <input class="desativar" type="radio" name="slide" id="slide5">
+                <input class="desativar" type="radio" name="slide" id="slide6">
+                         
+                <div class="slide s1">
+                    <!-- <img src="imagemhorizontal/imagem1.jpg" width="95%" height="650px"> -->
+                </div>
+                <div class="slide s2">
+                    <!-- <img src="imagemhorizontal/imagem2.jpg" width="95%" height="650px"> -->
+                </div>
+                <div class="slide s3">
+                    <!-- <img src="imagemhorizontal/imagem3.jpg" width="95%" height="650px"> -->
+                </div>
+                <div class="slide s4">
+                    <!-- <img src="imagemhorizontal/imagem4.jpg" width="95%" height="650px"> -->
+                </div> 
+                <div class="slide s5">
+                    <!-- <img src="imagemhorizontal/imagem5.jpg" width="95%" height="650px"> -->
+                </div> 
+                <div class="slide s6">
+                    <!-- <img src="imagemhorizontal/imagem6.jpg" width="95%" height="650px"> -->
+                </div> 
+            </div>
+
+            <div class="indicadores">
+                <label class="indicador" for="slide1"></label>
+                <label class="indicador" for="slide2"></label>
+                <label class="indicador" for="slide3"></label>
+                <label class="indicador" for="slide4"></label>
+                <label class="indicador" for="slide5"></label>
+                <label class="indicador" for="slide6"></label>
+            </div>
+        </div>
+    </section>
+
+    <section id="section1">
+        <div class="carousel">
+            <div class="slidesv">
+                <input class="desativar" type="radio" name="slidev" id="slidev1" checked>
+                <input class="desativar" type="radio" name="slidev" id="slidev2">
+                <input class="desativar" type="radio" name="slidev" id="slidev3">
+                <input class="desativar" type="radio" name="slidev" id="slidev4">
+                <input class="desativar" type="radio" name="slidev" id="slidev5">
+        
+                <div class="slidev first">
+                  <img src="vimagem1.jpg" alt=""> 
+        
+                </div>
+                <div class="slidev">
+                    <img src="vimagem2.jpg" alt=""> 
+        
+                </div>
+                <div class="slidev">
+                    <img src="vimagem3.jpg" alt=""> 
+        
+                </div>
+                <div class="slidev">
+                    <img src="vimagem4.jpg" alt="" > 
+        
+                </div>
+                <div class="slidev"> <img src="vimagem5.jpg" alt="" ></div>
+                
+                </div> 
+            </div>
+            <div class="navigationvertical">
+                <label class="verticalbar" for="slidev1"></label>
+                <label class="verticalbar" for="slidev2"></label>
+                <label class="verticalbar" for="slidev3"></label>
+                <label class="verticalbar" for="slidev4"></label>
+                <label class="verticalbar" for="slidev5"></label>
+            </div>
+         </div>   
+         <div class="quemsomos">
+            <P>Somos dois amigos, Frederico Bitelo e Bernardo Favretto, que sempre compartilharam uma grande paixão: o futebol. Essa paixão nos uniu e nos inspirou a transformar um sonho em realidade. Decidimos criar nossa própria loja de camisetas de futebol, unindo nossa amizade e amor pelo esporte. Nossa missão é oferecer aos fãs a oportunidade de vestir as cores dos seus times favoritos com estilo e qualidade. Cada camisa representa não apenas um time, mas também o espírito e a emoção que o futebol desperta. Bem-vindo à nossa loja, onde o futebol é mais do que um jogo—é parte da nossa vida!</P>
+         </div>
+    </section>
+
+    <section id="section2">
+        <div>
+            <div class="flex tres margin">
+                <img src="botafogoshirt.png" alt="camisa do Botafogo" class="coluna">
+                <h5 class="coluna"> Camisa Botafogo</h5>
+                <input type="number" name="quantidade" id="quantidade1" min="0">
+                <input class="button" type="button" value="Adicionar ao Carrinho" onclick="adicionarAoCarrinho('Camisa Botafogo', document.getElementById('quantidade1').value, 100)">
+            </div>
+            <div class="flex tres margin">
+                <img src="spshirt.png" alt="camisa do São Paulo" class="coluna">
+                <h5 class="coluna"> Camisa São Paulo</h5>
+                <input type="number" name="quantidade" id="quantidade2" min="0">
+                <input class="button" type="button" value="Adicionar ao Carrinho" onclick="adicionarAoCarrinho('Camisa São Paulo', document.getElementById('quantidade2').value, 120)">
+            </div>
+            <div class="flex tres margin">
+                <img src="intershirt.png" alt="camisa do Internacional" class="coluna">
+                <h5 class="coluna"> Camisa Internacional</h5>
+                <input type="number" name="quantidade" id="quantidade3" min="0">
+                <input class="button" type="button" value="Adicionar ao Carrinho" onclick="adicionarAoCarrinho('Camisa Internacional', document.getElementById('quantidade3').value, 110)">
+            </div>
+            <div class="flex tres margin">
+                <img src="cruzeiroshirt.png" alt="camisa do Cruzeiro" class="coluna">
+                <h5 class="coluna"> Camisa Cruzeiro</h5>
+                <input type="number" name="quantidade" id="quantidade4" min="0">
+                <input class="button" type="button" value="Adicionar ao Carrinho" onclick="adicionarAoCarrinho('Camisa Cruzeiro', document.getElementById('quantidade4').value, 150)">
+            </div>
+            <div class="flex tres margin">
+                <img src="palmeirasshirt.png" alt="camisa do palmeiras" class="coluna">
+                <h5 class="coluna"> Camisa Palmeiras</h5>
+                <input type="number" name="quantidade" id="quantidade5" min="0">
+                <input class="button" type="button" value="Adicionar ao Carrinho" onclick="adicionarAoCarrinho('Camisa Palmeiras', document.getElementById('quantidade5').value, 190)">
+            </div>
+            <div class="flex tres margin">
+                <img src="Criciumashirt.png" alt="camisa do criciuma" class="coluna">
+                <h5 class="coluna"> Camisa Criciuma</h5>
+                <input type="number" name="quantidade" id="quantidade6" min="0">
+                <input class="button" type="button" value="Adicionar ao Carrinho" onclick="adicionarAoCarrinho('Camisa Criciuma', document.getElementById('quantidade6').value, 60)">
+            </div>
+        </div>
+        <div>
+            <button class="btn btn-primary" onclick="mostrarCarrinho()">Ver Carrinho</button>
+        </div>
+    </section>
+    
+    <section id="carrinho-section" style="display:none;">
+        <h2>Carrinho de Compras</h2>
+        <ul id="carrinho"></ul>
+        <p id="total">Total: R$ 0,00</p>
+        <button class="btn btn-secondary" onclick="esconderCarrinho()">Fechar</button>
+    </section>
+    <section class="form">
+        <div class="form2">
+            <div class="campo">
+                <h1 id="titulo">cadastrar-se</h1>
+                <p id="subtitulo">Use seus dados pessoais</p>
+                <br>
+            </div>
+        
+            <form>
+                <fieldset class="grupo">
+                    <div class="campo">
+                        <label for="nome"><strong>Nome</strong></label>
+                        <input type="text" name="nome" id="nome" required>
+                    </div>
+                    <div class="campo">
+                        <label for="sobrenome"><strong>sobrenome</strong></label>
+                        <input type="text" name="sobrenome" id="sobrenome" required>
+                    </div>
+                </fieldset>
+                <fieldset class="grupo">
+                <div class="campo">
+                    <label for="email"><strong>email</strong></label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div class="campo">
+                    <strong> Time do coração: </strong> <br> <select name="Time">  
+                    <option value="1"> Botafogo </option>
+                    <option value="2"> São Paulo </option>
+                    <option value="3"> Internacional  </option>
+                    <option value="4"> Cruzeiro </option>
+                    <option value="5"> Palmeiras </option>
+                    <option value="6"> Criciuma </option>
+                </select>
+                </div>
+                 </fieldset>
+                 <fieldset class="grupo">
+                <div class="campo">
+                    <label for="gênero"><strong>gênero</strong></label>
+                    <label>
+                        <input type="radio" name="sexo" value="masculino">masculino
+                    </label>
+                    <label>
+                        <input type="radio" name="sexo"  value="feminino">feminino
+                    </label>
+                    <label>
+                        <input type="radio" name="sexo" value="outros">outros
+                    </label>
+                </div>
+                <div class="campo">
+                Senha:
+                <input type="password" name="senha" size="20">
+                </div>
+              </fieldset>
+                <button type="submit" class="botao">cadastrar-se</button>
+             </form>
+            </div>
+    </section>
+</body>
+</html>
