@@ -155,7 +155,7 @@ li {
     overflow: hidden;
     float: left;
     position: absolute;
-    top: 120%;
+    top: 125%;
     left: 13%;
     transform: translate(-50%, -50%);
 }
@@ -164,7 +164,7 @@ li {
     position: absolute;
     bottom: 200px;
     left: 13%;
-    top: 150%;
+    top: 155%;
     transform: translate(-50%);
     display: flex;
 }
